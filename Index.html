@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #00ccff; /* Sky blue background */
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        table {
+            margin: auto;
+            font-size: 18px;
+        }
+        td {
+            padding: 8px;
+        }
+        input[type="text"], textarea, select {
+            width: 200px;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #666;
+        }
+        textarea {
+            width: 300px;
+            height: 60px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 5px 10px;
+            margin-top: 10px;
+            border-radius: 3px;
+            border: 1px solid black;
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td>First name</td>
+                <td><input type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <td>Middle name</td>
+                <td><input type="text" name="mname"></td>
+            </tr>
+            <tr>
+                <td>Last name</td>
+                <td><input type="text" name="lname"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="singing"> Singing
+                    <input type="checkbox" name="hobby" value="dancing"> Dancing
+                    <input type="checkbox" name="hobby" value="reading"> Reading
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea placeholder="Insert Address here..."></textarea></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <select>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Vadodara">Vadodara</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
